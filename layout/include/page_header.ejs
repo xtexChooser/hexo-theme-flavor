@@ -1,0 +1,30 @@
+<%- include('html_header') %>
+<div class="page_header">
+	<div class="left">
+		<%- eval(theme.before_page_header_left) %>
+		<a class="site_icon_link" href="<%- config.url %>"><img class="site_icon" alt="<%- __("site_icon") %>" src="<%- url_for(theme.icon) %>" /></a>
+		<div class="site_name">
+			<%- eval(theme.before_page_header_site_name) %>
+			<div class="title"><span class="text"><%- config.title %></span></div>
+			<div class="subtitle"><span class="text"><%- config.subtitle %></span></div>
+			<%- eval(theme.after_page_header_site_name) %>
+		</div>
+		<%- eval(theme.after_page_header_left) %>
+	</div>
+
+	<div class="right">
+		<%- eval(theme.before_page_header_right) %>
+		<div class="links">
+			<%- eval(theme.before_page_header_links) %>
+			<% for(name in theme.links) { %>
+				<div class="item item_<%- name %>">
+					<%- eval(theme.before_page_header_link) %>
+					<a class="link link_<%- name %>" href="<%- url_for(theme.links[name]) %>"><%- theme.links_uppercase ? name.toUpperCase() : name %></a>
+					<%- eval(theme.after_page_header_link) %>
+				</div>
+			<% } %>
+			<%- eval(theme.after_page_header_links) %>
+		</div>
+		<%- eval(theme.after_page_header_right) %>
+	</div>
+</div>

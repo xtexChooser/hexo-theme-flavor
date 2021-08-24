@@ -1,0 +1,9 @@
+<div class="page_footer">
+	<%- eval(theme.before_copyright) %>
+	<span class="copyright"><%- eval(theme.before_copyright_content) %><%= (theme.copyright_startyear ? theme.copyright_startyear + " - " : "") + new Date().getFullYear() %> <a href="<%- config.url %>"><%= config.author %></a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/xtexChooser/hexo-theme-flavor" target="_blank">Flavor Theme</a>.<%- eval(theme.after_copyright_content) %></span><br/>
+	<%- eval(theme.after_copyright) %>
+	<%- eval(theme.before_license) %>
+	<span class="license"><%- eval(theme.before_license_content) %><%- __("license") %> <a href="<%= theme.license.link %>" rel="nofollow noopener"><%= theme.license.name %><%- eval(theme.after_license_content) %></a></span>
+	<%- eval(theme.after_license) %>
+</div>
+<%- include('html_footer') %>

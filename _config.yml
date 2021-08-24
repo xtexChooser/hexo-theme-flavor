@@ -1,0 +1,115 @@
+# 站点图标
+icon: icon.png
+
+# 标题右上角链接
+links:
+#    Home: /
+#    Archive: archives/
+# 链接是否需要大写
+links_uppercase: false
+
+# 版权显示的起始年份，可选
+#copyright_startyear: 2021
+
+# 页面标题与站点名的分隔，如Archive - MySite
+title_split: ' - '
+
+# 授权协议名和链接
+license:
+    name: CC BY-SA 4.0 协议
+    link: https://creativecommons.org/licenses/by-sa/4.0/deed.zh
+
+# 文章自动截取的简介长度
+excerpt_length: 200
+
+# Archive页面的格式
+archive_date_format: MM-DD
+
+# 各个页面的插入HTML代码，作为JS表达式
+before_doctype: '""'
+before_html_start: '""'
+after_html_start: '""'
+
+before_head_start: '""'
+after_head_start: '""'
+before_head_end: '""'
+after_head_end: '""'
+
+before_body_end: '""'
+after_body_end: '""'
+before_html_end: '""'
+after_html_end: '""'
+
+before_body_start: '""'
+after_body_start: '""'
+
+before_index_list_container: '""'
+after_index_list_container: '""'
+
+before_archive_list_container: '""'
+after_archive_list_container: '""'
+
+before_post_content_container: '""'
+after_post_content_container: '""'
+
+before_copyright: '""'
+before_copyright_content: '""'
+after_copyright_content: '""'
+after_copyright: '""'
+
+before_license: '""'
+before_license_content: '""'
+after_license_content: '""'
+after_license: '""'
+
+before_page_header_left: '""'
+before_page_header_site_name: '""'
+after_page_header_site_name: '""'
+after_page_header_left: '""'
+
+before_page_header_right: '""'
+before_page_header_links: '""'
+before_page_header_link: '""'
+after_page_header_link: '""'
+after_page_header_links: '""'
+after_page_header_right: '""'
+
+before_pager: '""'
+after_pager: '""'
+before_pager_index: '""'
+after_pager_index: '""'
+before_pager_post: '""'
+after_pager_post: '""'
+before_pager_prev: '""'
+after_pager_prev: '""'
+before_pager_next: '""'
+after_pager_next: '""'
+
+before_post_content_title: '""'
+after_post_content_title: '""'
+before_post_content: '""'
+before_post_content_direct: '""'
+after_post_content_direct: '""'
+after_post_content: '""'
+
+before_post_info: '""'
+after_post_info: '""'
+
+before_post_list: '""'
+after_post_list: '""'
+before_post_list_index: '""'
+after_post_list_index: '""'
+before_post_list_archive: '""'
+after_post_list_archive: '""'
+
+before_post_list_index_title: '""'
+after_post_list_index_title: '""'
+before_post_list_index_excerpt: '""'
+before_post_list_index_excerpt_content: '""'
+after_post_list_index_excerpt_content: '""'
+after_post_list_index_excerpt: '""'
+
+before_archive_year: '""'
+after_archive_year: '""'
+before_archive_link: '""'
+after_archive_link: '""'

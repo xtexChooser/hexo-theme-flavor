@@ -1,0 +1,16 @@
+<div class="pager pager_index">
+	<%- eval(theme.before_pager) %>
+	<%- eval(theme.before_pager_index) %>
+	<% if(page.prev_link) { %>
+		<%- eval(theme.before_pager_prev) %>
+		<a class="prev" href="<%- page.prev_link %>"><%= __("pager_prev") %>
+		<%- eval(theme.after_pager_prev) %>
+	<% } %>
+	<% if(page.next_link) { %>
+		<%- eval(theme.before_pager_next) %>
+		<a class="next" href="<%- page.next_link %>"><%= __("pager_next") %>
+		<%- eval(theme.after_pager_next) %>
+	<% } %>
+	<%- eval(theme.after_pager_index) %>
+	<%- eval(theme.after_pager) %>
+</div>

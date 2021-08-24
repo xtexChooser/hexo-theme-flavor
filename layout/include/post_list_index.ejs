@@ -1,0 +1,17 @@
+<div class="post post_list post_list_index">
+	<%- eval(theme.before_post_list) %>
+	<%- eval(theme.before_post_list_index) %>
+	<% page.posts.each(function(post) { %>
+		<div class="post post_item post_item_index">
+			<%- eval(theme.before_post_list_index_title) %>
+			<h2 class="title_h2"><a class="title_link" href="<%- url_for(post.path) %>"><%= post.title %></a></h2>
+			<%- eval(theme.after_post_list_index_title) %>
+			<%- include("post_info", { post: post }) %>
+			<%- eval(theme.before_post_list_index_excerpt) %>
+			<p class="excerpt"><%- eval(theme.before_post_list_index_excerpt_content) %><%= post.excerpt ? post.excerpt : (post._content.length > theme.excerpt_length) ? post._content.substring(0, theme.excerpt_length) : post._content %><%- eval(theme.after_post_list_index_excerpt_content) %></p>
+			<%- eval(theme.after_post_list_index_excerpt) %>
+		</div>
+	<% }) %>
+	<%- eval(theme.after_post_list_index) %>
+	<%- eval(theme.after_post_list) %>
+</div>

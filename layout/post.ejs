@@ -1,0 +1,11 @@
+<%- include('include/page_header', { has_page_title: true, page_title: page.title }) %>
+
+<%- eval(theme.before_post_content_container) %>
+
+<div class="post post_content_container">
+	<%- include('include/post_content') %>
+</div>
+
+<%- eval(theme.after_post_content_container) %>
+
+<%- include('include/page_footer') %>

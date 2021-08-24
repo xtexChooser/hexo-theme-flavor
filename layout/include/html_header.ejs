@@ -1,0 +1,22 @@
+<%- eval(theme.before_doctype) %>
+<!DOCTYPE HTML>
+<%- eval(theme.before_html_start) %>
+<html lang="<%- config.language %>">
+	<%- eval(theme.after_html_start) %>
+	<%- eval(theme.before_head_start) %>
+	<head>
+		<%- eval(theme.after_head_start) %>
+		<meta charset="utf-8">
+		<meta name="X-UA-Compatible" content="IE=edge">
+		<title><%= has_page_title ? page_title + theme.title_split : "" %><%= config.title %></title>
+		<meta name="description" content="<%= config.description %>">
+		<meta lang="<%- config.language %>">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="<%- url_for(theme.icon) %>">
+		<link rel="stylesheet" type="text/css" href="<%- url_for("css/flavor.css") %>">
+		<%- eval(theme.before_head_end) %>
+	</head>
+	<%- eval(theme.after_head_end) %>
+	<%- eval(theme.before_body_start) %>
+	<body>
+	<%- eval(theme.after_body_start) %>

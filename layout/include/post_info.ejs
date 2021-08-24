@@ -1,0 +1,10 @@
+<span class="post post_info"><%- eval(theme.before_post_info) -%>
+	<%= full_date(post.date, is_archive() ? theme.archive_date_format : config.date_format) -%>
+	<% if(post.from && (is_home() || is_post())) { -%>
+		<a class="from" href="<%- post.from %>" target="_blank" title="<%= post.from %>"><%= __("translated") %></a>
+	<% } -%>
+	<%=
+		is_archive() ? "" : " " + __("length", post.content.length)
+	-%>
+	<%- eval(theme.after_post_info) -%>
+</span>

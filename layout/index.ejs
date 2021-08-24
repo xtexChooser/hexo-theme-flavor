@@ -1,0 +1,13 @@
+<%- include('include/page_header', { has_page_title: false }) %>
+
+<%- eval(theme.before_index_list_container) %>
+
+<div class="post post_list_container">
+	<%- include('include/post_list_index') %>
+</div>
+
+<%- eval(theme.after_index_list_container) %>
+
+<%- include('include/pager_index') %>
+
+<%- include('include/page_footer') %>

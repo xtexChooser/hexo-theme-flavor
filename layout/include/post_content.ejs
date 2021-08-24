@@ -1,0 +1,13 @@
+<div class="post post_content">
+	<%- eval(theme.before_post_content_title) %>
+	<h1><%= page.title %></h1>
+	<%- eval(theme.after_post_content_title) %>
+	<%- include("post_info", { post: page }) %>
+	<%- eval(theme.before_post_content) %>
+	<div class="post post_content_direct">
+		<%- eval(theme.before_post_content_direct) %>
+		<%- page.content %>
+		<%- eval(theme.after_post_content_direct) %>
+	</div>
+	<%- eval(theme.after_post_content) %>
+</div>
