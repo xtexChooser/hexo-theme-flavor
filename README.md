@@ -14,7 +14,7 @@ Compatible with [lxl80/hexo-admonition](https://github.com/lxl80/hexo-admonition
 
 ## Use
 
-This theme is published to npm now, you can use `npm install --save hexo-theme-flavor`([Package on npm registry](https://www.npmjs.com/package/hexo-theme-flavor)) to install it and set `theme` field in `_config.yml` to `flavor`.
+This theme is published to npm now, you can use `npm install --save hexo-theme-flavor hexo-renderer-ejs hexo-renderer-stylus` ([Package on npm registry](https://www.npmjs.com/package/hexo-theme-flavor)) to install it and set `theme` field in `_config.yml` to `flavor`.
 
 ### Configure
 
